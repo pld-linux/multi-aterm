@@ -9,6 +9,7 @@ Group:		X11/Applications
 Source0:	http://www.nongnu.org/materm//%{name}-%{version}.tar.gz
 # Source0-md5:	6a3408489a573e48df1c5740bcc5396b
 Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://www.nongnu.org/materm/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
@@ -67,11 +68,13 @@ CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -D %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -79,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog
-%attr(755,root,root) %{_bindir}/multi-aterm
-%{_mandir}/man1/multi-aterm.1*
-%{_desktopdir}/multi-aterm.desktop
+%attr(755,root,root) %{_bindir}/%{name}
+%{_mandir}/man1/%{name}.1*
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.png
