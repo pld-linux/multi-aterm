@@ -44,7 +44,6 @@ standardowych plików, a opcje przykrywaj± zasoby z plików.
 %setup -q
 
 %build
-%{__autoconf}
 LDFLAGS="%{rpmldflags} -lutempter -L%{_libdir}"
 export LDFLAGS
 %configure \
