@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Multi Aterm
+Comment=Small, fast X terminal application 
+Comment[pl]=Mały, ale szybki emulator terminala dla Systemu X Window
+Comment[pt_BR]=Um emulador de vt102 colorido
+Exec=multi-aterm
+Icon=gnome-term.png
+Terminal=false
+Type=Application
+Encoding=UTF-8
+# vi: encoding=utf-8
