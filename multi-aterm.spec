@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -D %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Terminals/%{name}.desktop
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -82,4 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/multi-aterm
 %{_mandir}/man1/multi-aterm.1*
-%{_applnkdir}/Terminals/multi-aterm.desktop
+%{_desktopdir}/multi-aterm.desktop
