@@ -59,7 +59,8 @@ export LDFLAGS
 	--enable-menubar \
 	--enable-graphics \
 	--enable-xgetdefault \
-	--enable-next-scroll
+	--enable-next-scroll \
+	--enable-mousewheel
 #	--enable-utmp \
 
 CFLAGS="%{rpmcflags}"
