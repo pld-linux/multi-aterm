@@ -2,12 +2,12 @@ Summary:	multi-aterm - tabbed terminal emulator in an X Window System
 Summary(pl):	multi-aterm - emulator terminala dla X Window System
 Summary(pt_BR):	Um emulador de vt102 colorido
 Name:		multi-aterm
-Version:	0.2
+Version:	0.2.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.nongnu.org/materm//%{name}-%{version}.tar.gz
-# Source0-md5:	6a3408489a573e48df1c5740bcc5396b
+# Source0-md5:	52f9c25a6fad7f638f7064ff6cc74c62
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.nongnu.org/materm/
@@ -18,6 +18,9 @@ BuildRequires:	libpng-devel
 BuildRequires:	utempter-devel
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
+%define		_desktopdir	%{_applnkdir}/Terminals
 
 %description
 multi-aterm is a terminal emulator. It is based on aterm 0.4.2,
