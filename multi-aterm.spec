@@ -19,15 +19,26 @@ Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-multi-aterm is a terminal emulator. It is based on aterm 0.4.2, fea-
-tures most of functionalties of aterm (pseudo fast-transparency, next-
-step look scroll bar) and mostly and notebook functionality. Thus, you
-can have several terminals in the same window. Each terminal can be
-configure (name, background, ...) with a configuration file. Like
+multi-aterm is a terminal emulator. It is based on aterm 0.4.2,
+features most of functionalties of aterm (pseudo fast-transparency,
+nextstep look scroll bar) and mostly and notebook functionality. Thus,
+you can have several terminals in the same window. Each terminal can
+be configured (name, background, ...) with a configuration file. Like
 aterm, it aims to be light and fast and desktop independant, meaning
 KDE or GNOME are not required. Several configurations files can be
 used. Specific files override resources of standard files, and options
 override resources found in files.
+
+%description -l pl
+multi-aterm to emulator terminala. Jest oparty na atermie 0.4.2, ma
+wiêkszo¶æ funkcji aterma (szybk± pseudoprzezroczysto¶æ, pasek
+przewijania w stylu nextstepa) oraz funkcjonalno¶æ pozwalaj±c± na
+trzymanie wielu terminali w tym samym oknie. Ka¿dy terminal mo¿e byæ
+konfigurowany (nazwa, t³o...) w pliku konfiguracyjnym. Podobnie jak
+aterm, ten terminal ma byæ lekki, szybki, niezale¿ny od pulpitu, czyli
+nie wymagaj±cy KDE ani GNOME. Mo¿na u¿ywaæ kilku plików
+konfiguracyjnych. Bardziej konkretne pliki przykrywaj± zasoby ze
+standardowych plików, a opcje przykrywaj± zasoby z plików.
 
 %prep
 %setup -q
