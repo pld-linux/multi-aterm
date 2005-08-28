@@ -6,7 +6,7 @@ Version:	0.2.1
 Release:	2
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.nongnu.org/materm//%{name}-%{version}.tar.gz
+Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.gz
 # Source0-md5:	52f9c25a6fad7f638f7064ff6cc74c62
 Source1:	%{name}.desktop
 Source2:	%{name}.png
