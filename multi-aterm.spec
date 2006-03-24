@@ -3,19 +3,20 @@ Summary(pl):	multi-aterm - emulator terminala dla X Window System
 Summary(pt_BR):	Um emulador de vt102 colorido
 Name:		multi-aterm
 Version:	0.2.1
-Release:	2
-License:	GPL
+Release:	3
+License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.gz
 # Source0-md5:	52f9c25a6fad7f638f7064ff6cc74c62
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.nongnu.org/materm/
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	utempter-devel
+BuildRequires:	xorg-lib-libXpm-devel
+BuildRequires:	xorg-lib-libXt-devel
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,6 +55,7 @@ export LDFLAGS
 	--with-term=rxvt \
 	--with-png \
 	--with-jpeg \
+	--with-xpm=/usr \
 	--enable-transparency \
 	--enable-fading \
 	--enable-menubar \
@@ -63,9 +65,8 @@ export LDFLAGS
 	--enable-mousewheel
 #	--enable-utmp \
 
-CFLAGS="%{rpmcflags}"
-
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -82,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc AUTHORS ChangeLog NEWS TODO
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 %{_desktopdir}/%{name}.desktop
