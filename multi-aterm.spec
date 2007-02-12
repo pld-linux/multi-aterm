@@ -1,6 +1,6 @@
 Summary:	multi-aterm - tabbed terminal emulator in an X Window System
-Summary(pl):	multi-aterm - emulator terminala dla X Window System
-Summary(pt_BR):	Um emulador de vt102 colorido
+Summary(pl.UTF-8):   multi-aterm - emulator terminala dla X Window System
+Summary(pt_BR.UTF-8):   Um emulador de vt102 colorido
 Name:		multi-aterm
 Version:	0.2.1
 Release:	3
@@ -31,16 +31,16 @@ KDE or GNOME are not required. Several configurations files can be
 used. Specific files override resources of standard files, and options
 override resources found in files.
 
-%description -l pl
+%description -l pl.UTF-8
 multi-aterm to emulator terminala. Jest oparty na atermie 0.4.2, ma
-wiêkszo¶æ funkcji aterma (szybk± pseudoprzezroczysto¶æ, pasek
-przewijania w stylu nextstepa) oraz funkcjonalno¶æ pozwalaj±c± na
-trzymanie wielu terminali w tym samym oknie. Ka¿dy terminal mo¿e byæ
-konfigurowany (nazwa, t³o...) w pliku konfiguracyjnym. Podobnie jak
-aterm, ten terminal ma byæ lekki, szybki, niezale¿ny od pulpitu, czyli
-nie wymagaj±cy KDE ani GNOME. Mo¿na u¿ywaæ kilku plików
-konfiguracyjnych. Bardziej konkretne pliki przykrywaj± zasoby ze
-standardowych plików, a opcje przykrywaj± zasoby z plików.
+wiÄ™kszoÅ›Ä‡ funkcji aterma (szybkÄ… pseudoprzezroczystoÅ›Ä‡, pasek
+przewijania w stylu nextstepa) oraz funkcjonalnoÅ›Ä‡ pozwalajÄ…cÄ… na
+trzymanie wielu terminali w tym samym oknie. KaÅ¼dy terminal moÅ¼e byÄ‡
+konfigurowany (nazwa, tÅ‚o...) w pliku konfiguracyjnym. Podobnie jak
+aterm, ten terminal ma byÄ‡ lekki, szybki, niezaleÅ¼ny od pulpitu, czyli
+nie wymagajÄ…cy KDE ani GNOME. MoÅ¼na uÅ¼ywaÄ‡ kilku plikÃ³w
+konfiguracyjnych. Bardziej konkretne pliki przykrywajÄ… zasoby ze
+standardowych plikÃ³w, a opcje przykrywajÄ… zasoby z plikÃ³w.
 
 %prep
 %setup -q
