@@ -1,6 +1,6 @@
 Summary:	multi-aterm - tabbed terminal emulator in an X Window System
-Summary(pl.UTF-8):   multi-aterm - emulator terminala dla X Window System
-Summary(pt_BR.UTF-8):   Um emulador de vt102 colorido
+Summary(pl.UTF-8):	multi-aterm - emulator terminala dla X Window System
+Summary(pt_BR.UTF-8):	Um emulador de vt102 colorido
 Name:		multi-aterm
 Version:	0.2.1
 Release:	3
