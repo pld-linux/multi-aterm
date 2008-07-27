@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	multi-aterm - emulator terminala dla X Window System
 Summary(pt_BR.UTF-8):	Um emulador de vt102 colorido
 Name:		multi-aterm
 Version:	0.2.1
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.nongnu.org/materm/%{name}-%{version}.tar.gz
